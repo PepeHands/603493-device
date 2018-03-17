@@ -13,8 +13,8 @@
         <img src="img/main-header-logo.svg" alt="Логотип Device" width="164" height="32">
      </a>
             <form name="search-form" action="/echo" method="post">
-                <input type="search" name="search" placeholder="Поиск по сайту">
-                <input type="button" name="enter" value="Войти">
+                <input type="search" id="search" name="search" placeholder="Поиск по сайту">
+                <label for="search" class="vusially-hidden">Поиск</label>
             </form>
 
             <ul class="user-navigation">
@@ -40,25 +40,67 @@
     </header>
     <main class="container">
         <h1 class="visually-hidden">Магазин Device</h1>
-        <section class="goods-item">
-            <h2 class="visually-hidden">Описание товара</h2>
-            <b>Делай селфи, как Бен Стиллер</b>
-            <p class="description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
-            </p>
-            <img src="img/slider-1.png" width="400" height="400" alt="Селфи-палка">
-            <p class="selfie-stick"><a class="button" href="selfie-stick.html">Подробнее</a></p>
-            <table>
-                <tr>
-                    <td>8,5м</td>
-                    <td>5кг</td>
-                    <td>Карбон</td>
-                </tr>
-                <tr>
-                    <th><span class="table-header">Длина палки</span></th>
-                    <th><span class="table-header">Вес палки</span></th>
-                    <th><span class="table-header">Материал</span></th>
-                </tr>
-            </table>
+        <section class="slider">
+            <ul>
+                <li class="slider-li">
+                    <h2 class="visually-hidden">Описание товара</h2>
+                    <b>Делай селфи, как Бен Стиллер</b>
+                    <p class="description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
+                    </p>
+                    <img src="img/slider-1.png" width="400" height="400" alt="Селфи-палка">
+                    <p class="slider-1-item"><a class="button" href="selfie-stick.html">Подробнее</a></p>
+                    <table>
+                        <tr>
+                            <td>8,5м</td>
+                            <td>5кг</td>
+                            <td>Карбон</td>
+                        </tr>
+                        <tr>
+                            <th><span class="table-header">Длина палки</span></th>
+                            <th><span class="table-header">Вес палки</span></th>
+                            <th><span class="table-header">Материал</span></th>
+                        </tr>
+                    </table>
+                </li>
+                <li class="slider-li">
+                    <h2 class="visually-hidden">Описание товара</h2>
+                    <b>Худеем правильно!</b>
+                    <p class="description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
+                    </p>
+                    <img src="img/slider-2.png" width="400" height="400" alt="Селфи-палка">
+                    <p class="slider-2-item"><a class="button" href="selfie-stick.html">Подробнее</a></p>
+                    <table>
+                        <tr>
+                            <td>48 часов</td>
+
+                        </tr>
+                        <tr>
+                            <th><span class="table-header">Без подзарядки</span></th>
+
+                        </tr>
+                    </table>
+                </li>
+                <li class="slider-li">
+                    <h2 class="visually-hidden">Описание товара</h2>
+                    <b>Порхает как бабочка, жалит как пчела!</b>
+                    <p class="description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
+
+                    </p>
+                    <img src="img/slider-3.png" width="400" height="400" alt="Селфи-палка">
+                    <p class="slider-3-item"><a class="button" href="selfie-stick.html">Подробнее</a></p>
+                    <table>
+                        <tr>
+                            <td>800 м</td>
+                            <td>50 м</td>
+
+                        </tr>
+                        <tr>
+                            <th><span class="table-header">Дальность полёта</span></th>
+                            <th><span class="table-header">Радиус поражения</span></th>
+                        </tr>
+                    </table>
+                </li>
+            </ul>
         </section>
         <section class="goods">
             <h2 class="visually-hidden">Каталог товаров</h2>
@@ -88,10 +130,18 @@
             <ul class="features-list">
                 <li class="features-item"><a class="features-button" href="#">Доставка</a>
                     <h3>Доставка</h3>
-                    <p class="features-description">Мы с довольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы мы неплохо заработаем, поднимая его на ваш этаж</p>
+                    <p class="features-description">Мы с довольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы мы неплохо заработаем, поднимая его на ваш этаж
+                    <img src="img/delivery.png" alt="Доставка" width="136" height="164"></p>
                 </li>
-                <li class="features-item"><a class="features-button" href="#">Гарантия</a></li>
-                <li class="features-item"><a class="features-button" href="#">Кредит</a></li>
+                <li class="features-item"><a class="features-button" href="#">Гарантия</a>
+                    <p class="features-description">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.
+                    <img src="img/warranty.png" alt="Гарантия" width="171" height="195"></p>
+                </li>
+                <li class="features-item"><a class="features-button" href="#">Кредит</a>
+                    <p class="features-description">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.
+                    <img src="img/credit.png" alt="Кредит" width="156" height="188">
+                    </p>
+                </li>
             </ul>
         </section>
         <section class="brands">
@@ -113,10 +163,12 @@
             </ul>
             <p><a class="button" href="about-us.html">Подробнее о нас</a></p>
         </section>
-        <section class="contacts">
+        <section class="contacts-modal">
             <h2>Контакты</h2>
-            <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает. </p>
+            <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает. 
+            <img src="img/map.jpg" width="560" height="222" alt="Карта"></p>
             <p><a class="button" href="text-us.html">Напишите нам</a>
+                <button class="modal-close" type="button">Закрыть</button>
         </section>
     </main>
     <footer class="main-footer">
@@ -145,12 +197,12 @@
         <p class="footer-call-number">Тел.: +7 (495) 495-95-95</p>
         <div class="footer-social">
 
-            <a class="social-button" href="#">Facebook</a>
-            <a class="social-button" href="#">Instagram</a>
-            <a class="social-button" href="#">Twitter</a>
+            <a class="social-button" href="#"><img src="img/facebook.svg" alt="Facebook" width="32" height="32"></a>
+            <a class="social-button" href="#"><img src="img/instagram.svg" alt="Instagram" width="32" height="32"></a>
+            <a class="social-button" href="#"><img src="img/twitter.svg" alt="Twitter" width="32" height="32"></a>
         </div>
         <p class="footer-copyright">
-            <a class="button" href="https://htmlacademy.ru"><img src="img/htmlacademy.jpg"></a>
+            <a class="button" href="https://htmlacademy.ru"><img src="img/htmlacademy.svg"></a>
         </p>
     </footer>
     <section class="modal modal-login">
@@ -160,7 +212,7 @@
         <span class="modal-close">x</span>
     </section>
     <section class="modal modal-write-us">
-    <h2 class="visually-hidden">Напишите нам</h2>
+        <h2 class="visually-hidden">Напишите нам</h2>
         <form class="modal-write-us-form" method="post">
             <label for="modal-write-us-name">Ваше имя</label>
             <input type="text" id="modal-write-us-name" placeholder="Имя Фамилия">
