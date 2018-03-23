@@ -4,6 +4,11 @@
 <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&amp;subset=cyrillic" rel="stylesheet"> 
+    <link href="fonts/gilroyextrabold.woff2" rel="stylesheet">
+    <link href="fonts/gilroylight.woff2" rel="stylesheet">
+    
+    <link href="css/css.css" rel="stylesheet">
 </head>
 
 <body>
@@ -13,7 +18,7 @@
         <img src="img/main-header-logo.svg" alt="Логотип Device" width="164" height="32">
      </a>
 
-            <form name="search-form" action="/echo" method="post">
+            <form class="search-form" action="/echo" method="post">
                 <input type="search" id="search" name="search" placeholder="Поиск по сайту">
                 <label for="search" class="vusially-hidden">Поиск</label>
             </form>
@@ -21,14 +26,15 @@
                 <li class="login-link"><a class="profile" href="valentin-petuhov.html">Валентин Петухов</a></li>
                 <li class="login-link"><a href="logout.html"> Выйти</a></li>
             </ul>
-            <p class="compare">
-                <a class="button" href="compare.html">Сравнить</a>
+           <p class="compare">
+                <a class="header-button" href="compare.html">Сравнить</a>
             </p>
             <p class="basket">
-                <a class="button" href="basket.html">Корзина</a>
+                <a class="header-button" href="basket.html">Корзина</a>
             </p>
             <ul class="catalog">
                 <li><a href="catalog.html">Каталог товаров</a></li>
+                <!--тут выпадающая менюшка-->
             </ul>
             <ul class="site-navigation">
                 <li><a href="delivery.html">Доставка</a></li>
@@ -38,14 +44,14 @@
         </nav>
     </header>
     <main class="container">
-        <h1>Моноподы для селфи</h1>
+        <h1 class="catalog-header">Моноподы для селфи</h1>
         <ul class="breadcrumbs">
             <li><a href="index.html">Главная</a></li>
             <li><a href="catalog.html">Каталог товаров</a></li>
             <li><a class="breadcrumbs-current">Моноподы для селфи</a></li>
         </ul>
         <section class="filters">
-            <h2 class="visually hidden">Фильтр</h2>
+            <h2 class="form-header">Фильтр</h2>
             <form class="filter" method="get" action="#">
                 <fieldset class="filters-value">
                     <legend class="filters-legend">Стоимость</legend>
@@ -100,21 +106,21 @@
                 <li class="catalog-item">
                     <a class="catalog-item-name" href="catalog-item.html">
                         <h3>Любительская селфи-палка</h3>
-                        <p class="catalog-item-image"><img src="img/item-1.jpg" width="220" height="165" alt="Любительская селфи-палка"></p>
+                        <p class="catalog-item-image"><img src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка"></p>
                     </a>
                     <p class="catalog-item-price">500 руб</p>
                 </li>
                 <li class="catalog-item">
                     <a class="catalog-item-name" href="catalog-item.html">
                         <h3>Профессиональная селфи-палка</h3>
-                        <p class="catalog-item-image"><img src="img/item-2.jpg" width="220" height="165" alt="Профессиональная селфи-палка "></p>
+                        <p class="catalog-item-image"><img src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка "></p>
                     </a>
                     <p class="catalog-item-price">1500 руб</p>
                 </li>
                 <li class="catalog-item">
                     <a class="catalog-item-name" href="catalog-item.html">
                         <h3>Непотопляемая селфи-палка </h3>
-                        <p class="catalog-item-image"><img src="img/item-3.jpg" width="220" height="165" alt="Непотопляемая селфи-палка"></p>
+                        <p class="catalog-item-image"><img src="img/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка"></p>
                     </a>
                     <p class="catalog-item-price">2500 руб</p>
                 </li>
@@ -127,15 +133,15 @@
                 </li>
             </ul>
             <ul class="back-navigation">
-                <li class="back"><a href="#">Назад</a></li>
+                <li class="back"><a class="navigation-link" href="#">Назад</a></li>
             </ul>
             <ul class="pagination-list">
-                <li class="pagination-item pagination-item-current"><a>1</a></li>
-                <li class="pagination-item"><a href="#">2</a></li>
-                <li class="pagination-item"><a href="#">3</a></li>
+                <li class="pagination-item pagination-item-current"><a class="current">1</a></li>
+                <li class="pagination-item"><a class="page-number" href="#">2</a></li>
+                <li class="pagination-item"><a class="page-number" href="#">3</a></li>
             </ul>
             <ul class="forward-navigation">
-                <li class="forward"><a href="#">вперед</a></li>
+                <li class="forward"><a class="navigation-link" href="#">Вперед</a></li>
             </ul>
         </section>
     </main>
@@ -152,10 +158,10 @@
                 <li class="login-link">Выйти</li>
             </ul>
             <p class="compare">
-                <a class="button" href="compare.html">Сравнить</a>
+                <a class="footer-button" href="compare.html">Сравнить</a>
             </p>
             <p class="basket">
-                <a class="button" href="basket.html">Корзина</a>
+                <a class="footer-button" href="basket.html">Корзина</a>
             </p>
             <ul class="site-navigation">
                 <li><a href="delivery.html">Доставка</a></li>
@@ -171,7 +177,7 @@
             <a class="social-button" href="#"><img src="img/twitter.svg" alt="Twitter" width="32" height="32"></a>
         </div>
         <p class="footer-copyright">
-            <a class="button" href="https://htmlacademy.ru"><img src="img/htmlacademy.jpg"></a>
+            <a class="link-button" href="https://htmlacademy.ru"><img src="img/htmlacademy.jpg"></a>
         </p>
     </footer>
     <section class="modal modal-login">
