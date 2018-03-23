@@ -110,9 +110,7 @@ a {
 
 .button:hover,
 .button:focus {
-
     background-color: #f0c52e;
-
 }
 
 .table-data {
@@ -301,4 +299,25 @@ a {
     color: rgba(0, 0, 0, 0.3)
 }
 
+.sort{
+    font-family: 'gilroylight', "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 24px;}
+.sorting-parameters{
+    list-style: none;
+}
+.sorting-parameters a{
+    color: black;
+}
+.sorting-button{
+    font-family: 'Open Sans', "Arial", sans-serif;
+    font-size: 14x;
+    line-height: 18px;
+    color: rgba(0, 0, 0, 0.3);
+}
+.sorting-button-current{
+    font-family: 'Open Sans', "Arial", sans-serif;
+    font-size: 14x;
+    line-height: 18px;
+    color: black;
 }
