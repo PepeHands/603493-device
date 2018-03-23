@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'gilroyextrabold';
-    src: url('gilroyextrabold.woff2') format('woff2');
+    src: url('/fonts/gilroyextrabold.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 
@@ -11,7 +11,7 @@
 
 @font-face {
     font-family: 'gilroylight';
-    src: url('gilroylight.woff2') format('woff2');
+    src: url('/fonts/gilroylight.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 
@@ -25,7 +25,7 @@ body {
     color: black;
     background-color: white;
     font-size: 15px;
-    line-height: 30 px;
+    line-height: 30px;
     font-family: 'Open Sans', 'Arial', sans-serif;
     background-image: url("/img/bg.png") background-position: top center;
     background-repeat: no-repeat;
