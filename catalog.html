@@ -5,20 +5,21 @@
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
      <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&amp;subset=cyrillic" rel="stylesheet"> 
-    <link href="fonts/gilroyextrabold.woff2" rel="stylesheet">
-    <link href="fonts/gilroylight.woff2" rel="stylesheet">
     
-    <link href="css/css.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    
 </head>
 
 <body>
     <header class="main-header">
+    
         <nav class="main-navigation">
             <a class="main-header-logo" href="index.html">
         <img src="img/main-header-logo.svg" alt="Логотип Device" width="164" height="32">
      </a>
-
-            <form class="search-form" action="/echo" method="post">
+            
+            <div class="flex-container">
+                <form class="search-form" action="/echo" method="post">
                 <input type="search" id="search" name="search" placeholder="Поиск по сайту">
                 <label for="search" class="vusially-hidden">Поиск</label>
             </form>
@@ -32,6 +33,7 @@
             <p class="basket">
                 <a class="header-button" href="basket.html">Корзина</a>
             </p>
+                
             <ul class="catalog">
                 <li><a href="catalog.html">Каталог товаров</a></li>
                 <!--тут выпадающая менюшка-->
@@ -41,7 +43,9 @@
                 <li><a href="warranty.html">Гарантия</a></li>
                 <li><a href="contacts.html">Контакты</a></li>
             </ul>
+                </div>
         </nav>
+        <p class="slider-number">01</p>
     </header>
     <main class="container">
         <h1 class="catalog-header">Моноподы для селфи</h1>

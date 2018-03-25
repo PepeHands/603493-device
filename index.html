@@ -5,34 +5,36 @@
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&amp;subset=cyrillic" rel="stylesheet">
-    <link href="fonts/gilroyextrabold.woff2" rel="stylesheet" type="text/css">
-    <link href="fonts/gilroylight.woff2" rel="stylesheet" type="text/css">
-
-    <link href="css/css.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
     <header class="main-header">
         <nav class="main-navigation">
             <a class="main-header-logo" href="index.html">
-        <img src="img/main-header-logo.svg" alt="Логотип Device" width="164" height="32">
-     </a>
+                <img src="img/main-header-logo.svg" alt="Логотип Device" width="164" height="32">
+            </a>
+            <div class="user-container">
             <form class="search-form" action="/echo" method="post">
                 <input type="search" id="search" name="search" placeholder="Поиск по сайту">
                 <label for="search" class="vusially-hidden">Поиск</label>
             </form>
-
+            
             <ul class="user-navigation">
                 <li class="login-link">
                     <a class="login-link" href="login.html">Войти</a>
                 </li>
             </ul>
-            <p class="compare">
+            <div class="header-buttons">
+                <p class="compare">
                 <a class="header-button" href="compare.html">Сравнить</a>
             </p>
             <p class="basket">
                 <a class="header-button" href="basket.html">Корзина</a>
             </p>
+                </div>
+            </div>
+            <div class="catalog-container">
             <ul class="catalog">
                 <li><a href="catalog.html">Каталог товаров</a></li>
                 <!--тут выпадающая менюшка-->
@@ -42,6 +44,7 @@
                 <li><a href="warranty.html">Гарантия</a></li>
                 <li><a href="contacts.html">Контакты</a></li>
             </ul>
+                </div>
         </nav>
     </header>
     <main class="container">
@@ -68,6 +71,7 @@
                         </tr>
                     </table>
                 </li>
+                <!--Слайды
                 <li class="slider-li">
                     <h2 class="visually-hidden">Описание товара</h2>
                     <b class="tagline">Худеем правильно!</b>
@@ -106,34 +110,47 @@
                         </tr>
                     </table>
                 </li>
+-->
             </ul>
         </section>
         <section class="goods">
             <h2 class="visually-hidden">Каталог товаров</h2>
             <ul class="goods-catalog">
                 <li class="goods-catalog-item">
-                    <div class="item-container"> <a class="goods-item" href="virtual-reality.html"><img src="img/virtual-reality.png" width="97" height="55"></a></div>
-                    <h3 class="goods-header">Виртуальная реальность</h3>
+                    <a class="goods-item" href="virtual-reality.html">
+                        <div class="item-container"> <img src="img/virtual-reality.png" width="97" height="55"></div>
+                        <h3 class="goods-header">Виртуальная реальность</h3>
+                    </a>
                 </li>
                 <li class="goods-catalog-item">
-                    <div class="item-container"> <a class="goods-item" href="monopods-for-selfies.html"><img src="img/monopods-for-selfies.png" width="86" height="117"></a></div>
-                    <h3 class="goods-header">Моноподы для селфи</h3>
+                    <a class="goods-item" href="monopods-for-selfies.html">
+                        <div class="item-container"> <img src="img/monopods-for-selfies.png" width="86" height="117"></div>
+                        <h3 class="goods-header">Моноподы для селфи</h3>
+                    </a>
                 </li>
                 <li class="goods-catalog-item">
-                    <div class="item-container"> <a class="goods-item" href="action-cameras.html"><img src="img/action-cameras.png" width="71" height="87"></a></div>
-                    <h3>Экшн-камеры</h3>
+                    <a class="goods-item" href="action-cameras.html">
+                        <div class="item-container"> <img src="img/action-cameras.png" width="71" height="87"></div>
+                        <h3 class="goods-header">Экшн-камеры</h3>
+                    </a>
                 </li>
                 <li class="goods-catalog-item">
-                    <div class="item-container"> <a class="goods-item" href="fitness-bracelets.html"><img src="img/fitness-bracelets.png" width="107" height="65"></a></div>
-                    <h3 class="goods-header">Фитнес-браслеты</h3>
+                    <a class="goods-item" href="fitness-bracelets.html">
+                        <div class="item-container"> <img src="img/fitness-bracelets.png" width="107" height="65"></div>
+                        <h3 class="goods-header">Фитнес-браслеты</h3>
+                    </a>
                 </li>
                 <li class="goods-catalog-item">
-                    <div class="item-container"> <a class="goods-item" href="smart-watches.html"><img src="img/smart-watches.png" width="56" height="98"></a></div>
-                    <h3 class="goods-header">Умные часы</h3>
+                    <a class="goods-item" href="smart-watches.html">
+                        <div class="item-container"> <img src="img/smart-watches.png" width="56" height="98"></div>
+                        <h3 class="goods-header">Умные часы</h3>
+                    </a>
                 </li>
                 <li class="goods-catalog-item">
-                    <div class="item-container"> <a class="goods-item" href="quadrocopter.html"><img src="img/quadrocopter.png" width="132" height="69"></a></div>
-                    <h3 class="goods-header">Квадрокоптеры</h3>
+                    <a class="goods-item" href="quadrocopter.html">
+                        <div class="item-container"> <img src="img/quadrocopter.png" width="132" height="69"></div>
+                        <h3 class="goods-header">Квадрокоптеры</h3>
+                    </a>
                 </li>
             </ul>
         </section>

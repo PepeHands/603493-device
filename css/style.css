@@ -1,6 +1,7 @@
 @font-face {
     font-family: 'gilroyextrabold';
-    src: url('/fonts/gilroyextrabold.woff2') format('woff2');
+    src: url('/fonts/gilroyextrabold-webfont.woff2') format('woff2'),
+    url('/fonts/gilroyextrabold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -11,11 +12,10 @@
 
 @font-face {
     font-family: 'gilroylight';
-    src: url('/fonts/gilroylight.woff2') format('woff2');
+    src: url('gilroylight-webfont.woff2') format('woff2'),
+    url('gilroylight-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
-}
 
 }
 
@@ -33,10 +33,45 @@ body {
 
 a {
     text-decoration: none;
+    color: black;
 }
 
 .main-header {
     background-color: #f7e296;
+    margin-top: 40px;
+    min-height: 300px;
+    outline: 1px solid black;
+    margin-bottom: 0px;
+    width: 1160px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main-navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.main-header-logo {
+    align-self: flex-start;
+    position: relative;
+    top: -17px;
+    margin-left: 60px;
+}
+
+.search-form {
+    outline: 1px solid black;
+    padding-left: 0px;
+    width: 163px;
+
+}
+
+.search-form input[type="search"] {
+    font: inherit;
+    background-color: #f7e296;
+    border: none;
 }
 
 .main-navigation,
@@ -44,13 +79,63 @@ a {
     font-size: 15px;
     font-family: "Open Sans", "Arial", sans-serif;
     line-height: 30px;
+    outline: 1px solid black;
+    margin: 0px;
+    padding: 0px;
 }
 
+.catalog-container {
+    width: 1040px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.user-container {
+    width: 1040px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.user-navigation{
+    padding-left:412px;}
+.header-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 220px;
+}
+.catalog{
+    padding: 0;
+}
 .site-navigation {
+    width: 500px;
+    margin:0px;
+    padding: 0px;
+}
+.site-navigation li {
+    display: inline;
+}
+
+.site-navigation li:last-child {
+    padding-left: 110px;
+    margin-right: 0px;
+}
+
+.site-navigation,
+.catalog {
     font-family: 'gilroyextrabold', "Arial", sans-serif;
     font-size: 18px;
     line-height: 24px;
     text-transform: uppercase;
+    outline: 1px solid black;
+    
+    
 }
 
 .user-navigation,
@@ -126,12 +211,6 @@ a {
     font-weight: 400;
 }
 
-.search-form input[type="search"] {
-    font: inherit;
-    background-color: #f7e296;
-    border: none;
-}
-
 .goods-header {
     font-family: 'gilroyextrabold', "Arial", sans-serif;
     font-size: 18px;
@@ -146,7 +225,11 @@ a {
     background-color: #f7e296;
     width: 160px;
     height: 160px;
-    background-position: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+
 }
 
 .item-container:hover,
@@ -156,8 +239,11 @@ a {
     background-color: #f0c52e;
 }
 
+
+
 .goods-catalog-item img:active {
     opacity: 0.3;
+
 
 }
 
@@ -299,23 +385,28 @@ a {
     color: rgba(0, 0, 0, 0.3)
 }
 
-.sort{
+.sort {
     font-family: 'gilroylight', "Arial", sans-serif;
     font-size: 16px;
-    line-height: 24px;}
-.sorting-parameters{
+    line-height: 24px;
+}
+
+.sorting-parameters {
     list-style: none;
 }
-.sorting-parameters a{
+
+.sorting-parameters a {
     color: black;
 }
-.sorting-button{
+
+.sorting-button {
     font-family: 'Open Sans', "Arial", sans-serif;
     font-size: 14x;
     line-height: 18px;
     color: rgba(0, 0, 0, 0.3);
 }
-.sorting-button-current{
+
+.sorting-button-current {
     font-family: 'Open Sans', "Arial", sans-serif;
     font-size: 14x;
     line-height: 18px;
