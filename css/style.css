@@ -597,7 +597,7 @@ a {
 .filters{
     width:265px;
     padding-bottom: 530px;
-}
+    background-color:gray;}
 .sort-goods{
     width:831px;
     display: flex;
