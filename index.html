@@ -17,7 +17,7 @@
             <div class="user-container">
                 <form class="search-form" action="/echo" method="post">
                     <input type="search" id="search" name="search" placeholder="Поиск по сайту">
-                    <label for="search" class="vusially-hidden">Поиск</label>
+                    <label for="search" class="visually-hidden">Поиск</label>
                 </form>
                 <div class="user-navigation-container">
                     <ul class="user-navigation">
@@ -27,18 +27,24 @@
                     </ul>
                     <div class="header-buttons">
                         <p class="compare">
-                            <a class="header-button" href="compare.html">Сравнить</a>
+                            <a class="compare-button" href="compare.html">Сравнить</a>
                         </p>
                         <p class="basket">
-                            <a class="header-button" href="basket.html">Корзина</a>
+                            <a class="basket-button" href="basket.html">Корзина</a>
                         </p>
                     </div>
                 </div>
             </div>
             <div class="catalog-container">
                 <ul class="catalog">
-                    <li><a href="catalog.html">Каталог товаров</a></li>
-                    <!--тут выпадающая менюшка-->
+                    <li><a class="catalog-menu" href="catalog.html">Каталог товаров</a></li>
+                        <ul class="sub-catalog"><li class="sub-catalog-item">Виртуальная реальность</li>
+                            <li class="sub-catalog-item">Виртуальная реальность</li>
+                            <li class="sub-catalog-item">Моноподы для селфи</li>
+                            <li class="sub-catalog-item">Экшн-камеры</li>
+                            <li class="sub-catalog-item">Фитнес-браслеты</li>
+                            <li class="sub-catalog-item">Умные часы</li>  
+                        </ul>
                 </ul>
                 <ul class="site-navigation">
                     <li><a href="delivery.html">Доставка</a></li>
@@ -61,7 +67,7 @@
                     <b class="tagline">Делай селфи, как Бен Стиллер</b>
                     <p class="description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
                     </p>
-                    <p class="slider-1-item"><a class="button" href="selfie-stick.html">Подробнее</a></p>
+                    <p class="slider-item"><a class="button" href="selfie-stick.html">Подробнее</a></p>
                     <table>
                         <tr>
                             <td class="table-data">8,5м</td>
@@ -89,7 +95,7 @@
                     <p class="description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
                     </p>
                     <img src="img/slider-2.png" width="400" height="400" alt="Селфи-палка">
-                    <p class="slider-2-item"><a class="button" href="selfie-stick.html">Подробнее</a></p>
+                    <p class="slider-item"><a class="button" href="selfie-stick.html">Подробнее</a></p>
                     <table>
                         <tr>
                             <td class="table-data">48 часов</td>
@@ -108,7 +114,7 @@
 
                     </p>
                     <img src="img/slider-3.png" width="400" height="400" alt="Селфи-палка">
-                    <p class="slider-3-item"><a class="button" href="selfie-stick.html">Подробнее</a></p>
+                    <p class="slider-item"><a class="button" href="selfie-stick.html">Подробнее</a></p>
                     <table>
                         <tr>
                             <td class="table-data">800 м</td>
