@@ -1078,8 +1078,8 @@ height: 7px;
     font-size: 18px;
     line-height: 24px;
     text-transform: none;
-    display: flex;
-    flex-wrap: wrap;
+    display: block;
+    max-width: 280px;
 }
 
 .catalog-item-price {
@@ -1089,15 +1089,16 @@ height: 7px;
     color: #464646;
     margin:0;
     padding:0;
-    display: inline-block;
-    margin-left: 34px;
+    display: inline;
+    margin-left: 0px;
     min-width:80px;
+    text-align: right;
 }
 .item-sign{
-    display: inline-block;
+    display: flex;
     align-items: baseline;
-    flex-wrap: wrap;
-    max-width: 360px;
+    justify-content: space-between;
+    
 }
 
 .back-navigation,
