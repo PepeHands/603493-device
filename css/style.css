@@ -1051,22 +1051,24 @@ height: 7px;
     justify-content: column;
 }
 .catalog-item{
-    display: flex;
-    flex-direction: column;
+    margin-top:50px;
+   
 }
 .catalog-item-name p{
     margin:0;
     padding:0;
 }
-.catalog-item a:not(:nth-child(n+1)){
+.catalog-item:not(:nth-child(2n)){
     margin-right:38px;
 }
-
+.catalog-item-image{
+    width:360px;
+}
 .catalog-list{
     margin:0;
     padding: 0;
     margin-left:74px;
-    margin-top: 68px;
+    margin-top: 15px;
 }
 .catalog-item h3{
     margin:0;
@@ -1076,7 +1078,8 @@ height: 7px;
     font-size: 18px;
     line-height: 24px;
     text-transform: none;
-    display: inline-block;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .catalog-item-price {
@@ -1088,6 +1091,13 @@ height: 7px;
     padding:0;
     display: inline-block;
     margin-left: 34px;
+    min-width:80px;
+}
+.item-sign{
+    display: inline-block;
+    align-items: baseline;
+    flex-wrap: wrap;
+    max-width: 360px;
 }
 
 .back-navigation,
