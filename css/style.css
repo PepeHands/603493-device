@@ -1111,6 +1111,31 @@ height: 7px;
     color: black;
 }
 
+.pagination-list,
+.forward-navigation,
+.back-navigation{
+    
+    margin:0;
+    padding: 0;
+}
+.forward-navigation li{
+    margin-right:30px;
+    letter-spacing: 0.2em;
+}
+.back-navigation li{
+    margin-left: 30px;
+    letter-spacing: 0.2em;
+}
+.pagination-list {
+display: flex;
+justify-content: space-between;
+min-width: 88px;
+margin-left: 12px;
+
+}
+.pagination-list li:last-child{
+    padding-right: 0px;
+}
 .navigation-link {
     color: black;
 }
@@ -1236,10 +1261,17 @@ height: 7px;
     display: flex;
 }
 .navigation-container{
+    margin-left:72px;
+    margin-right: 72px;
+    background-color: #ebebeb;
     width: 760px;
     display: flex;
     justify-content: space-between;
     margin-bottom: 80px;
+    align-items: center;
+    margin-top: 30px;
+    min-height: 71px;
+    text-transform: uppercase;
 }
 .catalog-shop{
     display: flex;
