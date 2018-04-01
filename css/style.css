@@ -811,6 +811,7 @@ a {
     top: 0;
     height: 100%;
     margin-top: 0;
+    transition: ease-in-out 0s;
 }
 
 
@@ -1975,11 +1976,13 @@ a {
 .modal-write-us {
     width: 960px;
     height: 558px;
-    display: flex;
-
+    display: none;
+left: 50%;
+top: 50%;
     box-shadow: 0 2px 1px 2px #cfcfcf;
     margin-left: auto;
     margin-right: auto;
+    position:fixed;
 }
 
 .modal-write-us-form {
@@ -2092,3 +2095,24 @@ a {
     opacity: 0.7;
     
 }
+.modal-show{
+    display: block;
+    animation: bounce 0.6s;
+}
+@keyframes bounce {
+    0% {
+      transform: translateY(-2000px);
+    }
+  
+    70% {
+      transform: translateY(30px);
+    }
+  
+    90% {
+      transform: translateY(-10px);
+    }
+  
+    100% {
+      transform: translateY(0);
+    }
+  }
