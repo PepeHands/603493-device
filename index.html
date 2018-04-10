@@ -250,7 +250,7 @@
                 <h2 class="block-header">Контакты</h2>
                 <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.
                     <a class="map-link" href="yandex.maps.ru"><img src="img/map.jpg" width="560" height="222" alt="Карта"></a></p>
-                <p><a class="button text-us" href="text-us.html">Напишите нам</a></p>
+                <p><a class="button text-us" href="#">Напишите нам</a></p>
                 <button class="modal-close visually-hidden" type="button">Закрыть</button>
             </section>
         </div>
@@ -320,5 +320,15 @@
             <button class="modal-close" type="button"></button>
         </form>
     </section>
+    <script>
+    var link = document.querySelector(".text-us");
+    var popup = document.querySelector(".modal-write-us");
+    link.addEventListener("click", function(evt){
+        evt.preventDefault();
+        console.log("Клик по кнопке напишите нам");
+        popup.classList.add("modal-show");
+        console.log("Вылезло окошко");
+    });
+    </script>
 </body>
 </html>
