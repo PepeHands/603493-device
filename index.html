@@ -326,12 +326,20 @@
     var close = document.querySelector(".modal-close");
     var login = popup.querySelector("input");
     var form = popup.querySelector(".modal-write-us-form");
+    var name_label = popup.querySelector("#modal-write-us-name");
+    var email = popup.querySelector("[type=email]");
+    var message = popup.querySelector("#modal-write-us-message");
+    var storage = localStorage.getItem("name_label");
     link.addEventListener("click", function(evt){
         evt.preventDefault();
         console.log("Клик по кнопке напишите нам");
         popup.classList.add("modal-show");
+        if (storage) {
+            name_label.value = storage;
+        }
         console.log("Вылезло окошко");
         login.focus();
+        
     });
     close.addEventListener("click", function(evt){
         evt.preventDefault();
@@ -340,8 +348,22 @@
         console.log("Закрыли окошко");
     });
     form.addEventListener("submit", function(evt){
-        evt.preventDefault();
-        console.log("Отправляем форму");
+       
+        if(!email.value || !message.value || !name_label.value) {
+            evt.preventDefault();
+            console.log("Поля не должны быть пустыми");
+        }
+        else {
+            localStorage.getItem("name_label", name_label.value);
+        }
+         })
+    window.addEventListener("keydown", function(evt){
+        if(evt.keyCode === 27){
+            evt.preventDefault();
+            if(popup.classlist.contains("modal-show")){
+                popup.classlist.remove("modal-show");
+            }
+        }
     })
     </script>
 </body>
